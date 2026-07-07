@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Science exhibition placeholder">
-  <rect width="900" height="520" fill="#eef6fb"/>
-  <path d="M390 90h120v90l160 235c25 37-1 85-46 85H276c-45 0-71-48-46-85l160-235V90Z" fill="#fff" stroke="#24406f" stroke-width="18"/>
-  <path d="M305 350h290l55 80H250l55-80Z" fill="#087f8c"/>
-  <circle cx="400" cy="290" r="26" fill="#d59e2f"/>
-  <circle cx="500" cy="320" r="20" fill="#5d8b42"/>
-  <circle cx="460" cy="250" r="16" fill="#24406f"/>
-</svg>

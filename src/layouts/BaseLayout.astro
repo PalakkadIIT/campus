@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const siteName = 'North Valley College';
+const siteName = 'IIT Palakkad';
 const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
 ---
 
@@ -21,7 +21,7 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/svg+xml" />
   </head>
   <body class="min-h-screen">
     <Header />
