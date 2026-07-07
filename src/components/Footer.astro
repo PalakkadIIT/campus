@@ -1,0 +1,37 @@
+---
+const quickLinks = [
+  { href: '/admissions/', label: 'Admissions' },
+  { href: '/departments/', label: 'Departments' },
+  { href: '/notices/', label: 'Notices' },
+  { href: '/events/', label: 'Events' },
+  { href: '/contact/', label: 'Contact' },
+];
+---
+
+<footer class="bg-campus-ink text-white">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
+    <div>
+      <p class="text-lg font-bold">North Valley College</p>
+      <p class="mt-3 text-sm leading-6 text-slate-300">
+        A public-facing campus website template built for clear updates, fast loading, and simple publishing.
+      </p>
+    </div>
+    <div>
+      <p class="font-semibold">Quick links</p>
+      <div class="mt-3 grid gap-2">
+        {quickLinks.map((link) => <a href={link.href} class="text-sm text-slate-300 hover:text-white">{link.label}</a>)}
+      </div>
+    </div>
+    <address class="not-italic">
+      <p class="font-semibold">Contact</p>
+      <p class="mt-3 text-sm leading-6 text-slate-300">
+        North Valley Road, Greenfield<br />
+        Phone: +91 98765 43210<br />
+        Email: info@northvalley.edu
+      </p>
+    </address>
+  </div>
+  <div class="border-t border-white/10 px-4 py-4 text-center text-xs text-slate-400">
+    © {new Date().getFullYear()} North Valley College. All rights reserved.
+  </div>
+</footer>

@@ -1,0 +1,152 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import DepartmentCard from '../components/DepartmentCard.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import EventCard from '../components/EventCard.astro';
+import gallery from '../content/data/gallery.json';
+
+const departments = (await getCollection('departments')).filter((department) => department.data.featured);
+const notices = (await getCollection('notices'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+const events = (await getCollection('events'))
+  .sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf())
+  .slice(0, 3);
+const galleryPreview = gallery.slice(0, 3);
+---
+
+<BaseLayout title="North Valley College" description="A fast, modern, content-managed campus website for North Valley College.">
+  <Hero
+    title="Learn with purpose at North Valley College"
+    description="Explore academic programs, campus updates, events, faculty, and admissions information in one simple public website."
+    image="/images/campus/hero.svg"
+  />
+
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+      <SectionTitle
+        eyebrow="About the college"
+        title="A student-centered campus for academic growth"
+        description="North Valley College combines classroom teaching, practical exposure, mentoring, and active campus life to help students prepare for meaningful careers."
+      />
+      <div class="grid gap-4 sm:grid-cols-3">
+        <div class="rounded-lg bg-campus-mist p-5">
+          <p class="text-3xl font-bold text-campus-teal">3</p>
+          <p class="mt-2 text-sm text-slate-700">Academic departments</p>
+        </div>
+        <div class="rounded-lg bg-campus-mist p-5">
+          <p class="text-3xl font-bold text-campus-leaf">6</p>
+          <p class="mt-2 text-sm text-slate-700">Faculty profiles</p>
+        </div>
+        <div class="rounded-lg bg-campus-mist p-5">
+          <p class="text-3xl font-bold text-campus-gold">2026</p>
+          <p class="mt-2 text-sm text-slate-700">Admissions open</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-campus-mist py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        <SectionTitle eyebrow="Academics" title="Featured departments" description="Browse departments and their course offerings." />
+        <a href="/departments/" class="text-sm font-bold text-campus-teal hover:text-campus-ink">View all departments</a>
+      </div>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        {
+          departments.map((department) => (
+            <DepartmentCard
+              title={department.data.title}
+              description={department.data.description}
+              image={department.data.image}
+              href={`/departments/${department.slug}/`}
+              courses={department.data.courses}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
+    <div>
+      <div class="flex items-end justify-between gap-4">
+        <SectionTitle eyebrow="Updates" title="Latest notices" />
+        <a href="/notices/" class="text-sm font-bold text-campus-teal hover:text-campus-ink">All notices</a>
+      </div>
+      <div class="mt-8 grid gap-4">
+        {
+          notices.map((notice) => (
+            <NoticeCard
+              title={notice.data.title}
+              date={notice.data.date}
+              category={notice.data.category}
+              important={notice.data.important}
+              href={`/notices/${notice.slug}/`}
+            />
+          ))
+        }
+      </div>
+    </div>
+
+    <div>
+      <div class="flex items-end justify-between gap-4">
+        <SectionTitle eyebrow="Campus life" title="Upcoming events" />
+        <a href="/events/" class="text-sm font-bold text-campus-teal hover:text-campus-ink">All events</a>
+      </div>
+      <div class="mt-8 grid gap-4">
+        {
+          events.map((event) => (
+            <EventCard
+              title={event.data.title}
+              date={event.data.date}
+              location={event.data.location}
+              image={event.data.image}
+              featured={event.data.featured}
+              href={`/events/${event.slug}/`}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-campus-mist py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        <SectionTitle eyebrow="Gallery" title="A look around campus" description="Replace these local placeholders with real campus photos when available." />
+        <a href="/gallery/" class="text-sm font-bold text-campus-teal hover:text-campus-ink">Open gallery</a>
+      </div>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        {
+          galleryPreview.map((item) => (
+            <figure class="overflow-hidden rounded-lg bg-white shadow-sm">
+              <img src={item.image} alt="" class="h-52 w-full object-cover" loading="lazy" />
+              <figcaption class="p-4">
+                <p class="font-semibold text-campus-ink">{item.title}</p>
+                <p class="mt-1 text-sm text-slate-600">{item.description}</p>
+              </figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="rounded-lg bg-campus-navy p-8 text-white sm:p-10">
+      <div class="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div>
+          <h2 class="text-3xl font-bold tracking-normal">Ready to join North Valley College?</h2>
+          <p class="mt-3 max-w-2xl text-slate-200">Admissions staff can help you compare programs, understand eligibility, and prepare documents.</p>
+        </div>
+        <a href="/contact/" class="rounded-md bg-white px-5 py-3 text-center text-sm font-bold text-campus-navy hover:bg-campus-gold">
+          Contact admissions
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

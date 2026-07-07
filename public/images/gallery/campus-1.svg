@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Main campus placeholder">
+  <rect width="900" height="620" fill="#d7eef2"/>
+  <rect y="430" width="900" height="190" fill="#5d8b42"/>
+  <rect x="120" y="220" width="660" height="240" rx="12" fill="#fff"/>
+  <path d="M90 220h720L450 100 90 220Z" fill="#172033"/>
+  <rect x="200" y="285" width="90" height="120" fill="#087f8c"/>
+  <rect x="405" y="285" width="90" height="175" fill="#d59e2f"/>
+  <rect x="610" y="285" width="90" height="120" fill="#24406f"/>
+</svg>

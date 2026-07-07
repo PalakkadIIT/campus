@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+}
+
+const { title, description, image } = Astro.props;
+---
+
+<section class="relative isolate overflow-hidden bg-campus-ink text-white">
+  <img src={image} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-35" loading="eager" />
+  <div class="absolute inset-0 -z-10 bg-campus-ink/45"></div>
+  <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-wide text-campus-gold">Admissions open for 2026</p>
+      <h1 class="mt-4 text-4xl font-bold tracking-normal sm:text-6xl">{title}</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-100">{description}</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/admissions/" class="rounded-md bg-campus-gold px-5 py-3 text-sm font-bold text-campus-ink hover:bg-white">
+          Apply now
+        </a>
+        <a href="/departments/" class="rounded-md border border-white/70 px-5 py-3 text-sm font-bold text-white hover:bg-white hover:text-campus-ink">
+          Explore departments
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

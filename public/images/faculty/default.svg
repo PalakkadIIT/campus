@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Faculty profile placeholder">
+  <rect width="240" height="240" rx="120" fill="#f3f7f9"/>
+  <circle cx="120" cy="88" r="42" fill="#087f8c"/>
+  <path d="M48 210c12-48 42-72 72-72s60 24 72 72H48Z" fill="#24406f"/>
+</svg>

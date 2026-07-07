@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-campus-ink antialiased;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  img {
+    @apply max-w-full;
+  }
+}
+
+@layer components {
+  .content-prose {
+    @apply max-w-none text-slate-700;
+  }
+
+  .content-prose h2 {
+    @apply mt-10 text-2xl font-bold text-campus-ink;
+  }
+
+  .content-prose h3 {
+    @apply mt-8 text-xl font-bold text-campus-ink;
+  }
+
+  .content-prose p,
+  .content-prose li {
+    @apply mt-4 leading-7;
+  }
+
+  .content-prose ul {
+    @apply mt-4 list-disc pl-6;
+  }
+
+  .content-prose a {
+    @apply font-medium text-campus-teal underline-offset-4 hover:underline;
+  }
+}

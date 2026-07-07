@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Computer science department placeholder">
+  <rect width="900" height="520" fill="#edf7f8"/>
+  <rect x="120" y="90" width="660" height="340" rx="22" fill="#172033"/>
+  <rect x="160" y="130" width="580" height="230" rx="8" fill="#087f8c"/>
+  <rect x="245" y="385" width="410" height="24" rx="12" fill="#d59e2f"/>
+  <text x="450" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#fff">&lt;/&gt;</text>
+</svg>

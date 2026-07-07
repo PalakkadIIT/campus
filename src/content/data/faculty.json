@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Dr. Asha Menon",
+    "role": "Head of Department",
+    "department": "Computer Science",
+    "email": "asha.menon@northvalley.edu",
+    "image": "/images/faculty/default.svg"
+  },
+  {
+    "name": "Prof. Rohan Desai",
+    "role": "Assistant Professor",
+    "department": "Computer Science",
+    "email": "rohan.desai@northvalley.edu",
+    "image": "/images/faculty/default.svg"
+  },
+  {
+    "name": "Prof. Nikhil Rao",
+    "role": "Head of Department",
+    "department": "Commerce",
+    "email": "nikhil.rao@northvalley.edu",
+    "image": "/images/faculty/default.svg"
+  },
+  {
+    "name": "Ms. Kavya Shah",
+    "role": "Assistant Professor",
+    "department": "Commerce",
+    "email": "kavya.shah@northvalley.edu",
+    "image": "/images/faculty/default.svg"
+  },
+  {
+    "name": "Dr. Meera Iyer",
+    "role": "Head of Department",
+    "department": "Physics",
+    "email": "meera.iyer@northvalley.edu",
+    "image": "/images/faculty/default.svg"
+  },
+  {
+    "name": "Mr. Arjun Pillai",
+    "role": "Laboratory Instructor",
+    "department": "Physics",
+    "email": "arjun.pillai@northvalley.edu",
+    "image": "/images/faculty/default.svg"
+  }
+]

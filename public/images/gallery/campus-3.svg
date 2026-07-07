@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Computer laboratory placeholder">
+  <rect width="900" height="620" fill="#eaf5f7"/>
+  <rect x="110" y="160" width="300" height="210" rx="18" fill="#172033"/>
+  <rect x="490" y="160" width="300" height="210" rx="18" fill="#172033"/>
+  <rect x="145" y="195" width="230" height="120" fill="#087f8c"/>
+  <rect x="525" y="195" width="230" height="120" fill="#24406f"/>
+  <rect x="180" y="395" width="540" height="42" rx="21" fill="#d59e2f"/>
+</svg>

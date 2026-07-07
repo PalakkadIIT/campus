@@ -1,0 +1,27 @@
+---
+import { getCollection, render } from 'astro:content';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+
+export async function getStaticPaths() {
+  const departments = await getCollection('departments');
+  return departments.map((department) => ({
+    params: { slug: department.slug },
+    props: { department },
+  }));
+}
+
+const { department } = Astro.props;
+const { Content } = await render(department);
+---
+
+<ContentLayout title={department.data.title} description={department.data.description} eyebrow="Department" image={department.data.image}>
+  <div class="mb-8 rounded-lg bg-campus-mist p-5">
+    <p class="text-sm font-semibold uppercase tracking-wide text-campus-teal">Head of department</p>
+    <p class="mt-2 text-lg font-bold text-campus-ink">{department.data.headOfDepartment}</p>
+    <p class="mt-4 text-sm font-semibold uppercase tracking-wide text-campus-teal">Courses</p>
+    <ul class="mt-2 list-disc pl-5">
+      {department.data.courses.map((course) => <li>{course}</li>)}
+    </ul>
+  </div>
+  <Content />
+</ContentLayout>

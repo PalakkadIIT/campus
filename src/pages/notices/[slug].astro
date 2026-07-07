@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from 'astro:content';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+
+export async function getStaticPaths() {
+  const notices = await getCollection('notices');
+  return notices.map((notice) => ({
+    params: { slug: notice.slug },
+    props: { notice },
+  }));
+}
+
+const { notice } = Astro.props;
+const { Content } = await render(notice);
+const formattedDate = new Intl.DateTimeFormat('en', { dateStyle: 'full' }).format(notice.data.date);
+---
+
+<ContentLayout title={notice.data.title} description={`${notice.data.category} notice published on ${formattedDate}.`} eyebrow={notice.data.category}>
+  <p class="font-semibold text-campus-teal">
+    <time datetime={notice.data.date.toISOString()}>{formattedDate}</time>
+    {notice.data.important && ' · Important'}
+  </p>
+  <Content />
+</ContentLayout>

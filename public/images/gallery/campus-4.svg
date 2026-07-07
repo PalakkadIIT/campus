@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Auditorium placeholder">
+  <rect width="900" height="620" fill="#172033"/>
+  <rect x="130" y="360" width="640" height="150" fill="#24406f"/>
+  <path d="M160 140h580v220H160z" fill="#d59e2f"/>
+  <circle cx="310" cy="260" r="58" fill="#087f8c"/>
+  <circle cx="450" cy="245" r="75" fill="#fff"/>
+  <circle cx="590" cy="260" r="58" fill="#5d8b42"/>
+</svg>

@@ -1,0 +1,50 @@
+---
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/about/', label: 'About' },
+  { href: '/admissions/', label: 'Admissions' },
+  { href: '/departments/', label: 'Departments' },
+  { href: '/notices/', label: 'Notices' },
+  { href: '/events/', label: 'Events' },
+  { href: '/faculty/', label: 'Faculty' },
+  { href: '/gallery/', label: 'Gallery' },
+  { href: '/contact/', label: 'Contact' },
+];
+---
+
+<header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8" aria-label="Primary navigation">
+    <a href="/" class="flex items-center gap-3 font-bold text-campus-ink" aria-label="North Valley College home">
+      <span class="grid h-10 w-10 place-items-center rounded-md bg-campus-teal text-white">NV</span>
+      <span class="leading-tight">
+        North Valley<br class="hidden sm:block" />
+        College
+      </span>
+    </a>
+
+    <div class="hidden items-center gap-1 lg:flex">
+      {
+        navItems.map((item) => (
+          <a href={item.href} class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-campus-mist hover:text-campus-teal">
+            {item.label}
+          </a>
+        ))
+      }
+    </div>
+
+    <details class="relative lg:hidden">
+      <summary class="list-none rounded-md border border-slate-300 px-3 py-2 text-sm font-semibold text-campus-ink marker:hidden">
+        Menu
+      </summary>
+      <div class="absolute right-0 mt-3 grid w-56 gap-1 rounded-lg border border-slate-200 bg-white p-2 shadow-soft">
+        {
+          navItems.map((item) => (
+            <a href={item.href} class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-campus-mist hover:text-campus-teal">
+              {item.label}
+            </a>
+          ))
+        }
+      </div>
+    </details>
+  </nav>
+</header>

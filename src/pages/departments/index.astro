@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionTitle from '../../components/SectionTitle.astro';
+import DepartmentCard from '../../components/DepartmentCard.astro';
+
+const departments = await getCollection('departments');
+---
+
+<BaseLayout title="Departments" description="Explore academic departments and course offerings at North Valley College.">
+  <section class="bg-campus-mist">
+    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <SectionTitle eyebrow="Academics" title="Departments" description="Each department page is powered by Markdown content in Astro Content Collections." />
+    </div>
+  </section>
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="grid gap-6 md:grid-cols-3">
+      {
+        departments.map((department) => (
+          <DepartmentCard
+            title={department.data.title}
+            description={department.data.description}
+            image={department.data.image}
+            href={`/departments/${department.slug}/`}
+            courses={department.data.courses}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
