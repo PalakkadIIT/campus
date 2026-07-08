@@ -3,9 +3,10 @@ const quickLinks = [
   { href: '/admissions/', label: 'Admissions' },
   { href: '/departments/', label: 'Departments' },
   
-  
   { href: '/contact/', label: 'Contact' },
 ];
+const gmapsLink = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.339255715437!2d76.728929!3d10.804816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba869e43f0f473f%3A0x1a53e6dc39a95498!2sIndian%20Institute%20Of%20Technology%E2%80%93Palakkad%20(IIT%E2%80%93Palakkad)!5e0!3m2!1sen!2sin!4v1783496753431!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin';
+
 ---
 
 <footer class="bg-campus-navy text-white">
@@ -20,6 +21,15 @@ const quickLinks = [
       <p class="font-semibold">Quick links</p>
       <div class="mt-3 grid gap-2">
         {quickLinks.map((link) => <a href={link.href} class="text-sm text-slate-300 hover:text-white">{link.label}</a>)}
+      </div>
+      <div class="mt-3 grid gap-2">
+      <iframe
+        src={gmapsLink}
+        title="Address google map"
+        class="h-[280px] w-[280px]"
+        loading="lazy"
+      >
+ 
       </div>
     </div>
     <address class="not-italic">
