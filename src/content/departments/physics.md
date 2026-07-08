@@ -1,7 +1,7 @@
 ---
 title: "Department of Physics"
 description: "A science department focused on experimental learning, analytical thinking, and research curiosity."
-image: "/images/departments/physics.svg"
+image: "/images/departments/physics.JPG"
 headOfDepartment: "Dr. Meera Iyer"
 courses:
   - "B.Sc. Physics"

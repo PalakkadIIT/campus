@@ -6,8 +6,8 @@ export default {
       colors: {
         campus: {
           ink: '#172033',
-          navy: '#24406f',
-          teal: '#087f8c',
+          navy: '#e94c26',
+          teal: '#f5a51f',
           leaf: '#5d8b42',
           gold: '#d59e2f',
           mist: '#f3f7f9',

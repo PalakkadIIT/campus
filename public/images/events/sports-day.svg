@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Sports day event placeholder">
-  <rect width="900" height="520" fill="#dcefe7"/>
-  <rect y="360" width="900" height="160" fill="#5d8b42"/>
-  <path d="M70 420h760" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
-  <circle cx="450" cy="250" r="92" fill="#fff"/>
-  <path d="M390 190h120l58 75-118 95-118-95 58-75Z" fill="#d59e2f"/>
-  <path d="M450 90v80M450 350v80M290 260h80M530 260h80" stroke="#24406f" stroke-width="20" stroke-linecap="round"/>
-</svg>

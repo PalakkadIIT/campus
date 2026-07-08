@@ -2,37 +2,37 @@
   {
     "title": "Main campus",
     "description": "The central academic block and courtyard.",
-    "image": "/images/gallery/campus-1.svg",
+    "image": "/images/gallery/campus-1.jpg",
     "category": "Campus"
   },
   {
     "title": "Library reading hall",
     "description": "A quiet reading space for students.",
-    "image": "/images/gallery/campus-2.svg",
+    "image": "/images/gallery/campus-2.JPG",
     "category": "Facilities"
   },
   {
     "title": "Computer laboratory",
     "description": "Hands-on computing sessions for practical courses.",
-    "image": "/images/gallery/campus-3.svg",
+    "image": "/images/gallery/campus-3.jpg",
     "category": "Labs"
   },
   {
     "title": "College auditorium",
     "description": "Events, seminars, and cultural programs.",
-    "image": "/images/gallery/campus-4.svg",
+    "image": "/images/gallery/campus-4.JPG",
     "category": "Events"
   },
   {
     "title": "Sports ground",
     "description": "Outdoor sports and inter-department tournaments.",
-    "image": "/images/gallery/campus-5.svg",
+    "image": "/images/gallery/campus-5.JPG",
     "category": "Sports"
   },
   {
     "title": "Science block",
     "description": "Laboratories and classrooms for science programs.",
-    "image": "/images/gallery/campus-6.svg",
+    "image": "/images/gallery/campus-6.jpg",
     "category": "Academics"
   }
 ]

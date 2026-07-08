@@ -1,7 +1,7 @@
 ---
 title: "Department of Computer Science"
 description: "Hands-on programs in programming, data systems, web technologies, and applied computing."
-image: "/images/departments/computer-science.svg"
+image: "/images/departments/computer-science.jpg"
 headOfDepartment: "Dr. Asha Menon"
 courses:
   - "B.Sc. Computer Science"
@@ -9,13 +9,11 @@ courses:
   - "Certificate in Web Development"
 featured: true
 ---
-
-The Department of Computer Science helps students build a strong foundation in programming, algorithms, database systems, networks, and web development. The department emphasizes project-based learning so students can connect concepts with practical work.
+The Computer Science and Engineering (CSE) department at Indian Institute of Technology Palakkad is a vibrant discipline that is committed to the advancement of knowledge through world-class teaching and high-impact research. It unravels the fundamentals of CSE to the students in a systematic and logical manner. Students are prepared for pioneering roles in the industry and academia by being trained in state-of-the-art topics through courses and projects. Faculty members, through their research, contribute to expanding the boundaries of scientific knowledge and develop innovative technologies for solving real-world problems
 
 ## Learning focus
 
-Students work with programming labs, seminars, peer coding sessions, and guided mini-projects. The curriculum encourages logical thinking, teamwork, and responsible use of technology.
-
+The department currently offers an undergraduate program (BTech in CSE), two interdisciplinary postgraduate programs (MTech in Computing and Mathematics, and MTech in System-on-Chip Design), and two research programs (MS and PhD). The curricula introduces students to state-of-the-art technologies through well designed courses and encourages innovation through projects. The curriculum undergoes regular revisions to keep pace with the ever-changing needs of the community.
 ## Facilities
 
 - Computer lab with networked systems

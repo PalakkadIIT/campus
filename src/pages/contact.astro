@@ -2,11 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionTitle from '../components/SectionTitle.astro';
 
-const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfEox-8RKq3cYVY62nq_1MF-dQAjDO8Wx3SZ61_4nvAyFVXbA/viewform?embedded=true';
+const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScO-2eFgnaLpd_efxkuxRYcsmFQ5z6wD-CqLtxK1_QrGTTOgQ/viewform?embedded=true';
 const googleFormDirectUrl = googleFormUrl.replace('?embedded=true', '');
+const gFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScEPUzwvMqvyIcVZ4FPehD8vaaBQoD6aDIccXxMCTOMgUKVHQ/viewform?embedded=true';
+const gFormDirectUrl = gFormUrl.replace('?embedded=true', '');
 ---
 
-<BaseLayout title="Contact" description="Contact details for North Valley College admissions and administration.">
+<BaseLayout title="Contact" description="Contact details for College admissions and administration.">
   <section class="bg-campus-mist">
     <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <SectionTitle eyebrow="Contact" title="Get in touch" description="Reach the admissions office, administration, or campus help desk." />
@@ -16,10 +18,11 @@ const googleFormDirectUrl = googleFormUrl.replace('?embedded=true', '');
     <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
       <h2 class="text-xl font-bold text-campus-ink">College office</h2>
       <address class="mt-4 not-italic leading-7 text-slate-700">
-        North Valley College<br />
-        North Valley Road, Greenfield<br />
-        Phone: +91 98765 43210<br />
-        Email: info@northvalley.edu
+       Indian Institute of Technology Palakkad</br>
+        Kanjikode | Palakkad</br>
+        Kerala | Pin: 678623</br>
+        Phone:  +91 491 209 2013/2001 (Office) | </br> +91 491 209 2035 (Academic Section) <br />
+        Email: netadmin@iitpkd.ac.in
       </address>
       <h2 class="mt-8 text-xl font-bold text-campus-ink">Office hours</h2>
       <p class="mt-4 leading-7 text-slate-700">Monday to Friday, 10:00 AM to 4:00 PM</p>
@@ -28,17 +31,36 @@ const googleFormDirectUrl = googleFormUrl.replace('?embedded=true', '');
     <div class="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
       <div class="flex flex-col gap-3 border-b border-slate-200 p-5 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h2 class="text-xl font-bold text-campus-ink">Contact form</h2>
+          <h2 class="text-xl font-bold text-campus-ink">Feedback form</h2>
           <p class="mt-1 text-sm text-slate-600">Submit your enquiry through the college Google Form.</p>
         </div>
         <a href={googleFormDirectUrl} class="text-sm font-bold text-campus-teal hover:text-campus-ink" target="_blank" rel="noopener noreferrer">
           Open form
         </a>
       </div>
+    
       <iframe
         src={googleFormUrl}
-        title="North Valley College contact form"
+        title="IIT Palakkad contact form"
         class="h-[720px] w-full"
+        loading="lazy"
+      >
+        Loading…
+      </iframe>
+    
+    <div class="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm" style="margin-top:20px">
+      <div class="flex flex-col gap-3 border-b border-slate-200 p-5 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 class="text-xl font-bold text-campus-ink">Issues form</h2>
+          <p class="mt-1 text-sm text-slate-600">Submit your enquiry through the college Google Form.</p>
+        </div>
+       
+      </div>
+      
+      <iframe
+        src={gFormUrl}
+        title="IIT Palakkad contact form"
+        class="h-[420px] w-full"
         loading="lazy"
       >
         Loading…

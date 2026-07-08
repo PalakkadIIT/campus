@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Sports ground placeholder">
-  <rect width="900" height="620" fill="#cfe3e8"/>
-  <rect y="250" width="900" height="370" fill="#5d8b42"/>
-  <rect x="120" y="320" width="660" height="220" rx="110" fill="none" stroke="#fff" stroke-width="16"/>
-  <line x1="450" y1="320" x2="450" y2="540" stroke="#fff" stroke-width="12"/>
-  <circle cx="450" cy="430" r="54" fill="none" stroke="#fff" stroke-width="12"/>
-</svg>

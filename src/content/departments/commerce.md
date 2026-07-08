@@ -1,7 +1,7 @@
 ---
-title: "Department of Commerce"
-description: "Programs in accounting, business studies, economics, taxation, and entrepreneurship."
-image: "/images/departments/commerce.svg"
+title: "Department of Geothermal Energy"
+description: "a specialised division within an energy ministry or company dedicated to exploring, developing, and managing the extraction of heat from the Earth's crust to generate sustainable electricity and direct heating solutions."
+image: "/images/departments/geothermal.JPG"
 headOfDepartment: "Prof. Nikhil Rao"
 courses:
   - "B.Com. General"
@@ -10,11 +10,11 @@ courses:
 featured: true
 ---
 
-The Department of Commerce prepares students for careers in accounting, finance, business operations, banking, and entrepreneurship. Classroom teaching is supported by case discussions, practical assignments, and market awareness activities.
+The Department of Geothermal Energy  prepares students for Formulate federal regulatory frameworks for deep-well drilling operations.Map national geothermal gradients and manage seismic risk assessment databases.Allocate grants and subsidies to research initiatives pushing Enhanced Geothermal Systems (EGS) forward
 
 ## Learning focus
 
-The department balances theory with practical exposure in accounting software, taxation basics, business communication, and financial literacy.
+The department Oversee national policy, resource mapping, and environmental compliance for public and private geothermal exploration projects
 
 ## Student opportunities
 

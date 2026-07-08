@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Annual day event placeholder">
-  <rect width="900" height="520" fill="#172033"/>
-  <path d="M120 410h660v70H120z" fill="#d59e2f"/>
-  <path d="M190 170h520v240H190z" fill="#24406f"/>
-  <circle cx="290" cy="250" r="54" fill="#087f8c"/>
-  <circle cx="450" cy="230" r="68" fill="#f8fafc"/>
-  <circle cx="610" cy="250" r="54" fill="#5d8b42"/>
-  <path d="M160 90h580l-70 80H230z" fill="#d59e2f"/>
-</svg>

@@ -1,6 +1,6 @@
 ---
 title: "Admissions"
-description: "Admissions information for undergraduate programs at North Valley College."
+description: "Admissions information for undergraduate programs at IIT Palakkad."
 ---
 
 Admissions for the 2026 academic year are open for undergraduate programs in science, commerce, and computer applications. Applicants should review eligibility, prepare required documents, and submit the application before the published deadline.

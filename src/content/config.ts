@@ -20,26 +20,9 @@ const departments = defineCollection({
   }),
 });
 
-const notices = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    category: z.string(),
-    important: z.boolean().default(false),
-  }),
-});
 
-const events = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    location: z.string(),
-    image: z.string(),
-    featured: z.boolean().default(false),
-  }),
-});
+
+
 
 const faculty = z.object({
   name: z.string(),
@@ -64,7 +47,7 @@ const data = defineCollection({
 export const collections = {
   pages,
   departments,
-  notices,
-  events,
+  
+  
   data,
 };
