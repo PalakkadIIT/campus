@@ -9,12 +9,7 @@ import EventCard from '../components/EventCard.astro';
 import gallery from '../content/data/gallery.json';
 
 const departments = (await getCollection('departments')).filter((department) => department.data.featured);
-const notices = (await getCollection('notices'))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 3);
-const events = (await getCollection('events'))
-  .sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf())
-  .slice(0, 3);
+
 const galleryPreview = gallery.slice(0, 3);
 ---
 
