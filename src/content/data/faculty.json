@@ -1,23 +1,23 @@
 [
   {
-    "name": "Dr. Asha Menon",
-    "role": "Head of Department",
-    "department": "Computer Science",
-    "email": "asha.menon@northvalley.edu",
+    "name": "Prof. A. Seshadri Sekhar",
+    "role": "Professor",
+    "department": "Mechanical Engineering",
+    "email": "as_sekhar@iitpkd.ac.in",
     "image": "/images/faculty/default.svg"
   },
   {
-    "name": "Prof. Rohan Desai",
+    "name": "Dr. Abdul Rasheed P",
     "role": "Assistant Professor",
-    "department": "Computer Science",
-    "email": "rohan.desai@northvalley.edu",
+    "department": "Biological Sciences and Engineering",
+    "email": "abdulrasheed@iitpkd.ac.in",
     "image": "/images/faculty/default.svg"
   },
   {
-    "name": "Prof. Nikhil Rao",
-    "role": "Head of Department",
-    "department": "Commerce",
-    "email": "nikhil.rao@northvalley.edu",
+    "name": "Dr. Abhinandan S P",
+    "role": "Assistant Professor",
+    "department": "Data Science",
+    "email": "",
     "image": "/images/faculty/default.svg"
   },
   {
